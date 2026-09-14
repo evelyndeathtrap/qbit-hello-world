@@ -15,9 +15,7 @@ def q(angles: list[float]):
     # 2. Apply accumulated phase transformations
     for angle in angles:
         rz(angle, qubits[0])
-    
-    # 3. Measurement gate required for sample()
-    mz(qubits[0])
+
 
 def qr():
     while True:
